@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <h1 class="title">Movies</h1>
+    <form class="movies-form">
+        <input class="movies-name" type="search" placeholder="movie name">
+        <input class="movies-year" type="search" placeholder="movie year">
+        <select name="category" id="category">
+            <option value="all">All</option>
+        </select>
+        <button class="movies-btn">Search</button>
+    </form>
+    <div class="movies"></div>
+    <template class="movie-template">
+        <div class="movie">
+            <span class="movie__number">0</span>
+            <h2 class="movie__title">Movie</h2>
+            <span class="movie__rating">0</span>
+            <div class="movie__year">0000</div>
+            <ul class="movie__categories"></ul>
+            <div class="movie__box">
+                <a class="movie__trailer" href="https://www.youtube.com/watch?v=" target="_blank">Watch Trailer</a>
+                <button class="movie__info">Movie Summary</button>
+            </div>
+        </div>
+    </template>
+    <div class="modal">
+        <div class="modal-dialog">
+            <h2 class="modal-title">Modal Title</h2>
+            <p class="modal-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem obcaecati reprehenderit earum nulla facilis error hic? Magni accusantium, modi sequi nobis expedita corporis, rem, ad quia non nulla at!</p>
+            <button class="modal-close">X</button>
+        </div>
+    </div>
+    <script src="js/movies.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
